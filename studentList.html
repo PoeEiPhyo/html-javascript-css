@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="table.css">
+    <script src="Save.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" style="display: grid;grid-template-columns: auto auto;grid-gap: 1px;">
+        <div>
+            <form>
+                <br><input type="text" id="name" placeholder="Enter Name" style="padding: 10px;width: 400px;"><br><br>
+                <input type="text" id="phone" placeholder="Enter Phone" style="padding: 10px;width: 400px;"><br><br>
+                <input type="text" id="email" placeholder="Enter Email" style="padding: 10px;width: 400px;"><br><br>
+                <textarea id="area" placeholder="Enter Address" style="padding: 10px;width: 400px;"></textarea><br><br>
+                Gender:&nbsp;<input type="radio" id="male" value="male" name="gender">Male<input type="radio" id="female" value="female" name="gender">Female<br><br>
+                Major:&nbsp;
+                <input type="checkbox" id="s1" name="subject" value="501">501
+                <input type="checkbox" id="s2" name="subject" value="502">502
+                <input type="checkbox" id="s3" name="subject" value="503">503<br><br>
+                <input type="button" onclick="SaveFunction()" value="Save" style="padding: 10px;text-align: center;width: 400px;">
+            </form>       
+        </div>
+        <div style="margin-right: 10px;">
+            <table id="result" class="table table-bordered">
+                
+            </table>
+        </div>
+    </div>  
+</body>
+</html>
