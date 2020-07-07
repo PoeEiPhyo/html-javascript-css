@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="first">First Number:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" id="first"><br><br>
+        <label for="second">Second Number:</label>
+        <input type="text" id="second"><br><br>
+
+        <button id="add" onclick="CalculateFunction(id)">ADD</button>
+        <button id="sub" onclick="CalculateFunction(id)">SUB</button>
+        <button id="mul" onclick="CalculateFunction(id)">MULTIPLY</button>
+        <button id="div" onclick="CalculateFunction(id)">DIVIDE</button>
+    </div>
+    <p id="answer"></p>
+    <script>
+        function CalculateFunction(id){
+            var num1=parseInt(document.getElementById("first").value);
+            var num2=parseInt(document.getElementById("second").value);
+            var ans=0;
+            var check=document.getElementById(id).innerHTML;
+            
+            switch(check){
+                case 'ADD':ans=num1+num2;break;
+                case 'SUB':ans=num1-num2;break;
+                case 'MULTIPLY':ans=num1*num2;break;
+                case 'DIVIDE':ans=num1/num2;break;
+            }
+            document.getElementById("answer").innerHTML="The result is "+ans;
+        }       
+    </script>
+</body>
+</html>
