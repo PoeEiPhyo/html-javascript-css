@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h2>Today Task.</h2>
+        <label style="margin: 10px;">Task Name:</label>
+        <input type="text" id="txt" style="padding: 5px;width:300px;margin: 10px;border-radius: 10%;">
+        <input type="button" id="but" value="Add" style="padding: 5px;width:80px;border-radius: 20%;margin: 10px;" onclick="TaskFunction()"><br><br>
+        <h5>Task List:</h5>
+        <div id="result">
+
+        </div>
+    </div>
+    
+    <script>
+        
+        var i=0;
+        var ans="";
+        var show=[];
+        function TaskFunction(){
+            var str=document.getElementById("txt").value;            
+            ans="<p id='"+i+"' style='padding:5px;width:520px;border:1px solid;'>"+str+"<button style='border-radius:50%;background-color:brown;color:white;border:none;float:right;' class='fa fa-close' onclick='Close("+i+")'></button>";           
+            show.push(ans);
+            document.getElementById("result").innerHTML+=show[i];
+            i++;
+            
+        }
+        function Close(i){
+            delete show[i];
+            document.getElementById(i).remove();
+        }
+    </script>
+</body>
+</html>
