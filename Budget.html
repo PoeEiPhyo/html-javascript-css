@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/BudgetStyle.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/BudgetAct.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Budget Amount</title>
+</head>
+<body>
+    <h1>BUDGET APP</h1>
+    <div class="all">
+        <div class="border1" style="color: purple;">
+            <label>Please Enter Your Budget</label><br><br>
+            <input type="text" id="budgettxt" style="border:1px solid purple;"><br><br>
+            <button id="b1" onclick="TotalAmt()">Calculate</button>
+        </div>
+        <div style="text-align: center;padding-top: 0px;color: purple;">
+            <h3>BUDGET</h3>
+            <i class="fa fa-money" style="color: purple;font-size: 30px;"></i><br><br>
+            <i class="fa fa-dollar" style="color: purple;font-size: 20px;"></i>
+            <lable id="totalamt1"></lable>
+        </div>
+        <div style="text-align: center;color: purple;">
+            <h3>EXPENSES</h3>
+            <i class="fa fa-credit-card" style="color: purple;font-size: 30px;"></i><br><br>
+            <i class="fa fa-dollar" style="color: purple;font-size: 20px;"></i>
+            <label id="exp1" style="color: green;"></label>
+        </div>  
+        <div style="text-align: center;color: purple;">
+            <h3>BALANCE</h3>
+            <i class="fa fa-dollar" style="color: purple;font-size: 30px;"></i><br><br>
+            <i class="fa fa-dollar" style="color: purple;font-size: 20px;"></i>
+            <label id="balance"></label>
+        </div>  
+
+        <div class="border2" style="color: green;">
+            <label>Please Enter Your Expense</label><br><br>
+            <input type="text" id="titletxt" style="border:1px solid green;"><br><br>
+            <label>Please Enter Your Expense Amount</label><br><br>
+            <input type="text" id="valuetxt"><br><br>
+            <button id="b2" onclick="TotalExpense()">Add Expense</button>
+        </div>
+        
+        <div id="last">
+            <table id="tb">
+                <tr>
+                    <th>Expense Title</th>
+                    <th>Expense Value</th>
+                    <th> </th>
+                </tr>               
+            </table>
+        </div>
+
+    </div>
+</body>
+</html>
