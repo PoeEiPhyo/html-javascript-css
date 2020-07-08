@@ -48,6 +48,7 @@ input{
 #last{
     grid-column: 3/6;
     margin-left: 10px;
+    margin-top:10px;
 }
 th,td{
     text-align: center;
