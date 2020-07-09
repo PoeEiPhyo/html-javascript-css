@@ -37,5 +37,5 @@ function deleteFunction(i){
     $("#"+i).remove();
     $("#exp1").text(totalExp);
     Balance();
-    alert(Exptitle.length+""+Expvalue.length);
+   
 }
