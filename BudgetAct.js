@@ -18,10 +18,10 @@ function TotalExpense(){
     Exptitle[i]=t1;
     Expvalue[i]=t2;
     totalExp+=t2;
-    iconedit[i]="<i class='fa fa-edit' style='font-size:13px;color:green;'></i>";
-    icondelete[i]="<i class='fa fa-trash' style='font-size:13px;color:green;'></i>";
+    iconedit[i]="<button><i class='fa fa-edit' style='font-size:13px;color:green;'></i></button>";
+    icondelete[i]="<button onclick='deleteFunction("+i+")'><i class='fa fa-trash' style='font-size:13px;color:green;'></i></button>";
     
-    $("#tb").append("<tr><td>"+Exptitle[i]+"</td><td>"+Expvalue[i]+"</td><td>"+iconedit[i]+""+icondelete[i]+"</td></tr>");
+    $("#tb").append("<tr id='"+i+"'><td>"+Exptitle[i]+"</td><td>"+Expvalue[i]+"</td><td>"+iconedit[i]+""+icondelete[i]+"</td></tr>");
     $("#exp1").text(totalExp);
     i++;
     
@@ -30,4 +30,12 @@ function TotalExpense(){
 function Balance(){
     var balance1=parseInt(totalBudget)-parseInt(totalExp);
     $("#balance").text(balance1);    
+}
+
+function deleteFunction(i){
+    totalExp-=Expvalue[i];
+    $("#"+i).remove();
+    $("#exp1").text(totalExp);
+    Balance();
+    alert(Exptitle.length+""+Expvalue.length);
 }
