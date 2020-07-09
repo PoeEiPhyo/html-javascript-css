@@ -36,6 +36,5 @@ function deleteFunction(i){
     totalExp-=Expvalue[i];
     $("#"+i).remove();
     $("#exp1").text(totalExp);
-    Balance();
-   
+    Balance();   
 }
