@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="MenuStyle.css">
+    <script src="MenuWork.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div style="margin-top: 10px;margin-left: 30%;font-size: 15.5px;">
+            <a href="manageFood.html" class="food" style="margin-right: 20px;text-decoration: none;"><b>Manage Food</b></a>
+            <a href="ManageCategories.html" class="food" style="margin-right: 20px;text-decoration: none;"><b>Manage Categories</b></a>
+            <a href="ManageOrder.html" class="food" style="margin-right: 20px;text-decoration: none;"><b>Manage Order</b></a>
+        </div><br>
+        <div style="background-color: white;padding: 10px;">
+            <table id="viewTable" class="table table-bordered" style="color: purple;">
+                <th>Name</th>
+                <th>Qty</th>
+                <th>Price</th>
+                
+                <tfoot id="tot" style="background-color: purple;color: white;">
+                        <script>tableFunction();</script>    
+                </tfoot>
+            </table>
+            
+        </div>      
+    </div>   
+</body>
+</html>
