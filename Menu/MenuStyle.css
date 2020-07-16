@@ -1,0 +1,128 @@
+body{
+    background-color: plum;
+    padding: 10px;
+}
+h3{
+    padding: 1px;
+    background-color: purple;
+    padding-left: 9%;
+    color: white;
+    margin-left: 0%;
+    /* margin-right: 5%; */
+    text-shadow:1px 1px white;
+}
+.all{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: plum;
+    grid-gap: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.first{
+    background-color: white;
+    border-radius: 20px;
+    width: 400px;
+}
+.second{
+    grid-column: 2/4;
+    background-color: white;
+    border-radius: 20px;
+}
+li{
+    list-style-type: none;
+    text-decoration: none;
+    padding: 10px;  
+    margin-right: 8%;
+    font-size: 16px;
+    border: 1px solid;
+    box-shadow: 5px 10px 20px plum inset;
+    border-radius: 12px;
+    margin-bottom:5px;
+   padding-left: 10%;
+}
+
+.dropbtn{
+    border:0px;
+    background-color: white;
+}
+.dropdown {
+    padding: 5px;
+}
+  
+.dropdown-content {
+    display: none;
+}
+  
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin-left:20px;
+}
+
+#searchbox{
+    border: 1px solid;
+    padding: 15px;
+    margin: 3% 9.5% 3% 5%;
+    background-color: purple;
+}
+#inputbox{
+    width: 95%;
+    border: none;
+}
+a{
+    color: purple;
+    text-shadow: purple;
+    
+}
+td{
+    padding: 10px;
+    border-color: purple;
+}
+th{
+    background-color: purple;
+    color: white;
+    padding: 10px;
+}
+::placeholder {
+    color: white;
+    opacity: 1;
+  }
+  #spoon{
+    margin-left: 20%;
+    width: 60px;
+    height: 60px;
+    transform:rotateZ(30deg);
+ 
+  }
+  #fork{
+    margin-left: 5%;
+    width: 60px;
+    height: 60px;
+    transform:rotateZ(-30deg);
+
+  }
+  .itemView{   
+      display: grid;
+      grid-template-columns: auto auto auto;
+      color: purple;
+      border: 1px solid;
+      box-shadow: 5px 10px 20px plum inset;
+      padding: 20px;
+      margin-bottom: 10px;
+      text-align: center;
+      margin-right: 5%;
+      padding-left: 5%;
+  }
+  button{
+      border-radius: 12px;
+  }
+  .images{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 150px;
+    height: 150px;
+  }
+  div{
+      border-radius: 20px;
+  }
