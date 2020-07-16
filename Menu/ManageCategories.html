@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="MenuStyle.css">
+    <script src="MenuWork.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div style="margin-top: 10px;margin-left: 30%;font-size: 15.5px;">
+        <a href="manageFood.html" class="food" style="margin-right: 20px;text-decoration: none;"><b>Manage Food</b></a>
+        <a href="ManageCategories.html" class="food" style="margin-right: 20px;text-decoration: none;"><b>Manage Categories</b></a>
+        <a href="ManageOrder.html" class="food" style="margin-right: 20px;text-decoration: none;"><b>Manage Order</b></a>
+    </div><br>
+
+    <div class="all">
+        <div class="first">
+            <h3>OUR MENU<img src="img/fork-spoon.jpg" id="spoon"><img src="img/fork-spoon.jpg" id="fork"></h3>
+            <ul id="viewMenu">
+                <script>viewItem();</script>
+            </ul>
+        </div>
+        <div class="second">
+            <div id="searchbox">
+                <div>
+                    <input type="text" placeholder="Search Our Menu" id="inputbox" style="color: purple;"><a href="#inputbox"><i class="fa fa-search" style="font-size: 20px;color:white;padding-left: 5px;"></i></a>
+                </div>
+            </div>
+
+            <div id="view" style="margin: 3% 5% 3% 5%;">
+                <script>viewItemList();</script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
