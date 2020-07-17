@@ -11,6 +11,11 @@ if(typeof(Storage)!=null){
   if(localStorage.getItem("category")!=null){
     categoriesArr=JSON.parse(localStorage.getItem("category"));
   }
+  if(localStorage.getItem("foodtotal")!=null){
+    totalArr=JSON.parse(localStorage.getItem("foodtotal"));
+  }
+}
+else{
 }
 
 function AddFunction(){
