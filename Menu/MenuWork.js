@@ -64,8 +64,9 @@ function viewItem(){
 
 var str1="";
 var str2="";
-categoriesArr=JSON.parse(localStorage.getItem("category")); 
+
 function viewItemList(){ 
+  categoriesArr=JSON.parse(localStorage.getItem("category")); 
   categoriesArr.forEach(function(value,key){
     str2+="<div class='itemView'><div class='images'><img src='"+value.image+"' style='width:150px;height:150px;box-shadow: 5px 10px 20px plum inset;'></div><div><lable style='font-size:20px;'><b>"+value.name+"</b></lable><br><br><lable style='background-color:plum;color:purple;padding:5px;'>$"+value.price+"</lable><br><br><p>"+value.desc+"</p></div><div style='padding-top:40px;'><button style='background-color:purple;color:white;padding:10px;width:100px;' onclick='totalFunction(\""+value.name+"\")' style='background-color:purple;color:white;'>Order</button></div></div>";        
   });
